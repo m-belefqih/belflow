@@ -1,0 +1,37 @@
+{
+  "name": "Test Gmail - BelFlow",
+  "meta": {
+    "description": "Premier test Gmail/SMTP : selectionne ta connexion SMTP et remplis To Email avec ta propre adresse, puis Enregistrer et Executer. Un clic envoie un vrai email. Guide : CONFIGURATION_API.md.",
+    "categories": ["Email", "Utilities"]
+  },
+  "nodes": [
+    {
+      "id": "belflow-mail-start",
+      "name": "Demarrer le test",
+      "type": "belflow.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0],
+      "parameters": {}
+    },
+    {
+      "id": "belflow-mail-send",
+      "name": "Envoyer mon email",
+      "type": "belflow.sendEmail",
+      "typeVersion": 1,
+      "position": [280, 0],
+      "parameters": {
+        "fromEmail": "",
+        "toEmail": "",
+        "subject": "Test BelFlow",
+        "emailFormat": "text",
+        "text": "Bonjour ! Mon workflow BelFlow peut maintenant envoyer des emails."
+      },
+      "notes": "Avant le test : selectionne Gmail BelFlow dans Credentials et remplis To Email avec ta propre adresse. From Email peut rester vide. Chaque execution envoie un vrai email."
+    }
+  ],
+  "connections": {
+    "Demarrer le test": {
+      "main": [[{ "node": "Envoyer mon email", "type": "main", "index": 0 }]]
+    }
+  }
+}
