@@ -13,7 +13,7 @@ expressions, a live execution view, credentials, integrations (Telegram, Discord
 and an AI Workflow Builder, a time-travel debugger and a guided Demo Mode, all running locally on Node.js + SQLite.
 It runs side by side with real n8n (BelFlow uses port **5679**, n8n uses 5678).
 
-**Dépôt :** [BelFlow](https://github.com/TON-PSEUDO/BelFlow)
+**Dépôt :** [BelFlow](https://github.com/m-belefqih/belflow)
 
 > - **New here? Start with [HOW_TO_RUN.md](HOW_TO_RUN.md)** (install, keys, tests, phone access, common problems).
 > - Feature status (what is implemented and tested): [FEATURES.md](FEATURES.md).
